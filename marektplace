@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer-Dienstleistungen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+        }
+        .service-card {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Freelancer-Dienstleistungen</h1>
+    </header>
+
+    <nav>
+        <a href="#">Startseite</a>
+        <a href="#">Dienstleistungen</a>
+        <a href="#">Freelancer</a>
+        <a href="#">Kontakt</a>
+    </nav>
+
+    <section>
+        <h2>Unsere Dienstleistungen</h2>
+        <div class="service-card">
+            <h3>Webentwicklung</h3>
+            <p>Erstellen Sie beeindruckende Websites mit unseren erfahrenen Entwicklern.</p>
+        </div>
+        <div class="service-card">
+            <h3>Grafikdesign</h3>
+            <p>Professionelles Design für Ihr Unternehmen.</p>
+        </div>
+        <div class="service-card">
+            <h3>Content Writing</h3>
+            <p>Hochwertige Inhalte, die Ihre Marke stärken.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Freelancer-Dienstleistungen. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
