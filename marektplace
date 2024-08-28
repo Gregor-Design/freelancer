@@ -4,62 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer-Dienstleistungen</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            margin: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        section {
-            padding: 20px;
-        }
-        .service-card {
-            background-color: #fff;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Freelancer-Dienstleistungen</h1>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="freelancer.html">Freelancer</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Startseite</a>
-        <a href="#">Dienstleistungen</a>
-        <a href="#">Freelancer</a>
-        <a href="#">Kontakt</a>
-    </nav>
-
-    <section>
+    <section class="services">
         <h2>Unsere Dienstleistungen</h2>
         <div class="service-card">
             <h3>Webentwicklung</h3>
@@ -73,6 +30,10 @@
             <h3>Content Writing</h3>
             <p>Hochwertige Inhalte, die Ihre Marke stärken.</p>
         </div>
+        <div class="service-card">
+            <h3>SEO-Beratung</h3>
+            <p>Optimieren Sie Ihre Website und erreichen Sie ein größeres Publikum.</p>
+        </div>
     </section>
 
     <footer>
@@ -80,3 +41,161 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Freelancer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Unsere Freelancer</h1>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="freelancer.html">Freelancer</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="freelancers">
+        <h2>Top Freelancer</h2>
+
+        <div class="freelancer-profile">
+            <h3>Max Mustermann</h3>
+            <p>Erfahrener Webentwickler mit Schwerpunkt auf Frontend-Technologien.</p>
+            <p><strong>Fähigkeiten:</strong> HTML, CSS, JavaScript, React</p>
+        </div>
+
+        <div class="freelancer-profile">
+            <h3>Lisa Müller</h3>
+            <p>Kreative Grafikdesignerin mit einem Auge für modernes Branding.</p>
+            <p><strong>Fähigkeiten:</strong> Photoshop, Illustrator, Logo-Design</p>
+        </div>
+
+        <div class="freelancer-profile">
+            <h3>Tom Schmidt</h3>
+            <p>Content Writer, spezialisiert auf SEO-optimierte Blog-Artikel und Webtexte.</p>
+            <p><strong>Fähigkeiten:</strong> SEO, Blog-Artikel, Marketing-Texte</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Freelancer-Dienstleistungen. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kontaktieren Sie uns</h1>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="freelancer.html">Freelancer</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Kontaktformular</h2>
+        <form action="mailto:deineemail@beispiel.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Freelancer-Dienstleistungen. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+}
+
+.services, .freelancers, .contact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-card, .freelancer-profile {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea {
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
